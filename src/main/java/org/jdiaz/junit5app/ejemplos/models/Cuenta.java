@@ -3,17 +3,13 @@ package org.jdiaz.junit5app.ejemplos.models;
 import java.math.BigDecimal;
 
 public class Cuenta {
+    public Cuenta(String persona, BigDecimal saldo) {
+        this.saldo = saldo;
+        this.persona = persona;
+    }
+
     private String persona;
     private BigDecimal saldo;
-    private String nombre;
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
     public String getPersona() {
         return persona;
