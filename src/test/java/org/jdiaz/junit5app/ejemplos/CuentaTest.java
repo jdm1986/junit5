@@ -19,6 +19,7 @@ class CuentaTest {
     void testNombreCuenta() {
         Cuenta cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
 //        cuenta.setPersona("Andres");
+        //prueba
         String esperado = "Andres";
         String realidad = cuenta.getPersona();
         assertNotNull(realidad, ()-> "la cuenta no puede ser nula");
